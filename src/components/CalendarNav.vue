@@ -199,6 +199,8 @@ export default {
             attributes: this.getMonthAttributes(month),
             isActive: month === this.month && this.yearIndex === this.year,
             isDisabled: !this.validator({ month, year: this.yearIndex }),
+            yearIndex: this.yearIndex,
+            year: this.year,
           };
         });
     },
